@@ -1,0 +1,15 @@
+LOAD data
+INFILE 'C:\Users\Mageswaran\Desktop\archive\zepto_v2.csv'
+INTO TABLE zepto
+FIELDS TERMINATED BY "," OPTIONALLY ENCLOSED BY '"'
+(
+    Category,
+    name,
+    mrp,
+    discountPercent,
+    availableQuantity,
+    discountedSellingPrice,
+    weightInGms,
+    outOfStock,
+    quantity
+)
