@@ -1,8 +1,8 @@
 /* ========================================================================
 PROJECT: Zepto Inventory Data Analysis
 DATABASE: Oracle 10g Express Edition
-AUTHOR: [Your Name]
-DESCRIPTION: 
+
+
 This script performs data validation, cleaning, and business analysis 
 on the Zepto inventory dataset. It covers stock availability, 
 product variety strategies, and inventory valuation.
@@ -80,4 +80,5 @@ SET
 SELECT NAME, SUM(DISCOUNTEDSELLINGPRICE * AVAILABLEQUANTITY) AS TOTAL_INVENTORY_VALUE
 FROM ZEPTO
 GROUP BY NAME
+
 ORDER BY TOTAL_INVENTORY_VALUE DESC;
