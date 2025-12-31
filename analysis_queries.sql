@@ -6,7 +6,7 @@ DATABASE: Oracle 10g Express Edition
 This script performs data validation, cleaning, and business analysis 
 on the Zepto inventory dataset. It covers stock availability, 
 product variety strategies, and inventory valuation.
-========================================================================
+===========================================================================
 */
 
 -- 1. DATA VALIDATION: Record Count Check
@@ -80,5 +80,4 @@ SET
 SELECT NAME, SUM(DISCOUNTEDSELLINGPRICE * AVAILABLEQUANTITY) AS TOTAL_INVENTORY_VALUE
 FROM ZEPTO
 GROUP BY NAME
-
 ORDER BY TOTAL_INVENTORY_VALUE DESC;
